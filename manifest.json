@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+
+  "name": "Vod Tools",
+  "description": "Vod tools for DLUFL",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "permissions": [
+    "activeTab",
+    "webRequest",
+    "webRequestBlocking",
+    "http://vod.dlufl.edu.cn/"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://vod.dlufl.edu.cn/vod/*"],
+      "css": ["vod.css"],
+      "js": ["vod.js"]
+    }
+  ]
+}

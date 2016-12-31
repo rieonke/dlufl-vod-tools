@@ -1,0 +1,55 @@
+body,html{
+    margin:0;
+    padding:0;
+}
+ul,li{
+    list-style-type: none;
+    display: inline-block;
+}
+h1 {
+    font-size:1.5em;
+}
+#page-container{
+    margin: 2em;
+}
+#head-container{
+    padding:1em;
+}
+
+#player-container{
+    width: 100%;
+    margin: 0 auto;
+    padding:1em;
+}
+
+#play-action-container{
+    display: inline-block;
+    width:49%;
+}
+#download-action-container{
+    display: inline-block;
+    width:49%;
+}
+#my-player{
+    margin:0 auto;
+}
+.play-btn{
+    display: inline-block;
+    padding:1em;
+    border-radius:0.5em;
+    background-color: #fff;
+    outline:none;
+    border:1px solid #2b9634;
+    cursor: pointer;
+    margin:0.2em;
+}
+.download-btn{
+    display: inline-block;
+    margin:0.2em;
+    text-decoration: none;
+    padding:1em;
+    border-radius:0.5em;
+    background-color: #fff;
+    outline:none;
+    border:1px solid #2b9634;
+}

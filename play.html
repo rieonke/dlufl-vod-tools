@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vod Tools - </title>
+    <link rel="stylesheet" href="video-js.min.css">
+    <link rel="stylesheet" href="play.css">
+</head>
+<body>
+<div id="page-container">
+
+    <div id="head-container">
+        <h1 id="head-title">播放页面 - </h1>
+    </div>
+
+    <div id="player-container">
+
+        <video id="my-player" class="video-js" controls preload="auto" poster="1.png" data-setup='{}'>
+            <source id="play-source" type="video/mp4" codecs='"a_ac3, avc"' />
+            <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a
+                web browser that
+                <a href="http://videojs.com/html5-video-support/" target="_blank">
+                    supports HTML5 video
+                </a>
+            </p>
+        </video>
+
+    </div>
+
+    <div id="play-list-container">
+
+        <div id="play-action-container">
+
+            <h1>在线播放</h1>
+
+            <div id="play-list"></div>
+
+        </div>
+
+        <div id="download-action-container">
+
+            <h1>下载</h1>
+
+            <div id="download-list"></div>
+
+        </div>
+
+    </div>
+
+</div>
+<script src="video.min.js"></script>
+<script src="play.js"></script>
+
+</body>
+</html>
