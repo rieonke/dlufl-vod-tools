@@ -2,6 +2,13 @@
 
 DLUFL VOD 的Chrome浏览器拓展小程序
 
+## 截图
+![屏幕截图](screen-shot.png)
+
+## 功能
+- 支持Windows, macOS, Linux 等平台的Chrome浏览器
+- 支持在线播放和下载视频
+
 ## 安装
 
 1. 下载Release中的vod-tools-v1.1.crx.zip文件解压得到crx文件
