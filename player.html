@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>VOD TOOL</title>
+    <!-- Meta -->
+    <meta name="description" content="The most popular HTML, CSS, and JS library in the world.">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="icon" href="/icon.png">
+    <link rel="stylesheet" href="css/docs.min.css">
+    <style>
+        .full-height{}
+        body,html{
+            height:100%;
+        }
+    </style>
+    <link rel="stylesheet" href="css/video-js.min.css">
+
+</head>
+<body class="bd-docs" data-spy="scroll" data-target=".bd-sidenav-active">
+<a id="skippy" class="sr-only sr-only-focusable" href="#content">
+    <div class="container">
+        <span class="skiplink-text">Skip to main content</span>
+    </div>
+</a>
+
+<header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
+    <a class="navbar-brand mr-0 mr-md-2" href="https://rieon.cn" target="_blank" aria-label="Bootstrap">
+        <img class="d-block" width="36" height="36" src="icon.png" >
+    </a>
+
+    <div class="navbar-nav-scroll">
+        <ul class="navbar-nav bd-navbar-nav flex-row">
+            <li class="nav-item">
+                <a class="nav-link " href="http://vod.dlufl.edu.cn" target="_blank">VOD 首页</a>
+            </li>
+        </ul>
+    </div>
+
+    <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+        <a data-toggle="modal" data-target="#tipModal" style="color: #fff;">校内播放不消耗流量</a>
+    </ul>
+
+    <a class="btn btn-bd-yellow d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3"
+       href="https://rieon.cn">作者</a>
+</header>
+
+
+<div class="container-fluid full-height">
+    <div class="row flex-xl-nowrap full-height">
+        <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
+            <nav class="collapse bd-links" id="bd-docs-nav">
+                <div class="bd-toc-item active">
+                    <a class="bd-toc-link" id="video-name">
+                        标题
+                    </a>
+                    <ul class="nav bd-sidenav" id="video-links">
+                        <li class="">
+                            <a>
+                               项目
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="col-12 col-md-9 col-xl-10" style="margin-top: 1rem;">
+            <video id="my-player" class="video-js" controls preload="auto" style="width: 100%;" poster="icon.png" data-setup='{}'>
+                <source id="play-source" type="video/mp4" codecs='"a_ac3, avc"' />
+                <p class="vjs-no-js">
+                    To view this video please enable JavaScript, and consider upgrading to a
+                    web browser that
+                    <a href="http://videojs.com/html5-video-support/" target="_blank">
+                        supports HTML5 video
+                    </a>
+                </p>
+            </video>
+        </div>
+    </div>
+</div>
+
+<!-- error Modal -->
+<div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="errorModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="errorModalLabel">错误</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+               应该走错片场了～没有找到任何可播放资源！
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- tip Modal -->
+<div class="modal fade" id="tipModal" tabindex="-1" role="dialog" aria-labelledby="tipModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="tipModalLabel">温馨提示</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                只要在校园网内<span style="color:red;">播放</span>或者<span style="color: red;">下载</span>，
+                <span style="color: red;">有线</span>和<span style="color: red;">无线</span>或者其他任何姿势都<span style="color: red;">不</span>消耗流量。
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-3.2.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/video.min.js"></script>
+<script src="js/player.js"></script>
+
+</body>
+</html>

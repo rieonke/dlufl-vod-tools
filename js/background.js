@@ -10,7 +10,7 @@ chrome.runtime.onMessage.addListener(
 
             movieLinks = request.links;
             window.localStorage.setItem("movieLinks",JSON.stringify(movieLinks));
-            chrome.tabs.update(sender.tab.id,{url:"./play.html"}, function (){
+            chrome.tabs.update(sender.tab.id,{url:"./player.html"}, function (){
                 console.log("updated a new tab");
             });
             sendResponse({farewell: "received videos"});
